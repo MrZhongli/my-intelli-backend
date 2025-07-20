@@ -1,32 +1,32 @@
+
+````md
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+<p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
+<p align="center">
+  <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
+  <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
+  <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
+  <a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
+  <a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
+  <a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
+  <a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
+  <a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
   <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
+  <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
   <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
 </p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+---
 
 # 📚 Biblioteca API - NestJS
 
 Una API RESTful desarrollada con NestJS para la gestión de una biblioteca digital, incluyendo autores, libros, usuarios y funcionalidades de exportación a Excel.
+
+---
 
 ## 🚀 Tecnologías Utilizadas
 
@@ -37,6 +37,8 @@ Una API RESTful desarrollada con NestJS para la gestión de una biblioteca digit
 - **Autenticación**: JWT (JSON Web Tokens)
 - **Exportación**: XLSX (Excel)
 - **Eventos**: EventEmitter para jobs asíncronos
+
+---
 
 ## 📋 Características Principales
 
@@ -52,87 +54,61 @@ Una API RESTful desarrollada con NestJS para la gestión de una biblioteca digit
 
 ## 🛠️ Instalación y Configuración
 
-### 1️⃣ **Prerrequisitos**
+### 1️⃣ Prerrequisitos
 
 - Node.js (v16 o superior)
 - PostgreSQL (v12 o superior)
 - npm o yarn
 
-### 2️⃣ **Clonar el Repositorio**
+### 2️⃣ Clonar el Repositorio
 
 ```bash
 git clone https://github.com/MrZhongli/my-intelli-backend.git
-cd a la carpeta interna si existe
-```
+cd my-intelli-backend
+````
 
-### 3️⃣ **Instalar Dependencias**
+### 3️⃣ Instalar Dependencias
 
 ```bash
 npm install
 ```
 
-### 4️⃣ **Configuración de Variables de Entorno**
+### 4️⃣ Configuración de Variables de Entorno
 
 Crea un archivo `.env` en la raíz del proyecto con la siguiente estructura:
 
 ```env
-# Base de datos PostgreSQL
 DATABASE_URL="postgresql://username:password@localhost:5432/biblioteca_db"
-
-# Ejemplo completo:
-# DATABASE_URL="postgresql://postgres:admin123@localhost:5432/biblioteca_dev"
-# El db debe estar creado anteriormente
 ```
 
-**⚠️ IMPORTANTE**: 
-- Cambia `username`, `password`, y `biblioteca_db` por tus credenciales reales
+> ⚠️ Cambia `username`, `password`, y `biblioteca_db` por tus credenciales reales.
 
-### 5️⃣ **Configuración de la Base de Datos**
+### 5️⃣ Configuración de la Base de Datos
 
 ```bash
-# Generar el cliente de Prisma
 npx prisma generate
-
-# Ejecutar migraciones (crear tablas)
 npx prisma migrate dev --name init
-
-# O si quieres un nombre más descriptivo:
-npx prisma migrate dev --name create_initial_tables
 ```
 
-### 6️⃣ **Iniciar la Aplicación**
+### 6️⃣ Iniciar la Aplicación
 
 ```bash
-# Desarrollo
 npm run start:dev
-
-# Producción
-npm run build
-npm run start:prod
 ```
 
-La aplicación estará disponible en: `http://localhost:3000`
+Accede a: [http://localhost:3000](http://localhost:3000)
 
 ---
 
 ## 📖 Documentación de la API
 
-### **Swagger UI**
-Una vez que la aplicación esté corriendo, puedes acceder a la documentación interactiva en:
-
-```
-http://localhost:3000/docs
-```
-
-Aquí encontrarás todos los endpoints disponibles, esquemas de datos, y podrás probar la API directamente.
+Accede a [http://localhost:3000/docs](http://localhost:3000/docs)
 
 ---
 
 ## 👤 Gestión de Usuarios
 
-### **Crear un Usuario**
-
-Antes de usar la mayoría de endpoints, necesitas crear un usuario. Usa Postman, Insomnia o Swagger:
+### Crear un Usuario
 
 **POST** `/users`
 
@@ -147,150 +123,55 @@ Antes de usar la mayoría de endpoints, necesitas crear un usuario. Usa Postman,
 }
 ```
 
-**Roles disponibles:**
-- `USER` - Usuario estándar
-- `ADMIN` - Administrador (si aplica)
+Roles disponibles:
 
-```
+* `USER`
+* `ADMIN`
+
+---
 
 ## 📚 Endpoints Principales
 
-### **📖 Autores**
-- `GET /authors` - Listar todos los autores
-- `GET /authors/:id` - Obtener autor por ID
-- `POST /authors` - Crear nuevo autor
-- `PUT /authors/:id` - Actualizar autor
-- `DELETE /authors/:id` - Eliminar autor
+### Autores
 
-### **📕 Libros**
-- `GET /books` - Listar todos los libros
-- `GET /books/:id` - Obtener libro por ID
-- `POST /books` - Crear nuevo libro
-- `PUT /books/:id` - Actualizar libro
-- `DELETE /books/:id` - Eliminar libro
+* `GET /authors`
+* `GET /authors/:id`
+* `POST /authors`
+* `PUT /authors/:id`
+* `DELETE /authors/:id`
 
-### **👥 Usuarios**
-- `GET /users` - Listar usuarios
-- `GET /users/:id` - Obtener usuario por ID
-- `POST /users` - Crear usuario
-- `PUT /users/:id` - Actualizar usuario
-- `DELETE /users/:id` - Eliminar usuario
+### Libros
+
+* `GET /books`
+* `GET /books/:id`
+* `POST /books`
+* `PUT /books/:id`
+* `DELETE /books/:id`
+
+### Usuarios
+
+* `GET /users`
+* `GET /users/:id`
+* `POST /users`
+* `PUT /users/:id`
+* `DELETE /users/:id`
 
 ---
 
 ## 📊 Exportación a Excel
 
-### **Funcionalidad de Exportación**
+### Endpoints
 
-La API incluye un sistema completo de exportación de datos a archivos Excel (.xlsx) con las siguientes características:
+* `GET /export/authors/excel`
+* `GET /export/books/excel`
+* `GET /export/combined/excel`
+* `GET /export/info`
 
-- **Múltiples formatos de exportación**
-- **Datos estadísticos incluidos**
-- **Hojas múltiples con información detallada**
-- **Formato profesional con columnas optimizadas**
-
-### **Endpoints de Exportación**
-
-#### 1️⃣ **Exportar Solo Autores**
-```http
-GET /export/authors/excel
-```
-**Devuelve**: `autores_YYYY-MM-DD.xlsx`
-
-**Contenido:**
-- ID, Nombre, Apellido del autor
-- Contador de libros (booksCount vs libros reales)
-- Lista de títulos de libros
-- Fechas de creación y actualización
-
-#### 2️⃣ **Exportar Solo Libros**
-```http
-GET /export/books/excel
-```
-**Devuelve**: `libros_YYYY-MM-DD.xlsx`
-
-**Contenido:**
-- ID, Título, ISBN, Descripción del libro
-- Información del autor asociado
-- Total de libros del autor
-- Fechas de creación y actualización
-
-#### 3️⃣ **Exportar Datos Combinados**
-```http
-GET /export/combined/excel
-```
-**Devuelve**: `biblioteca_completa_YYYY-MM-DD.xlsx`
-
-**Contenido (4 hojas):**
-1. **Autores** - Lista completa de autores
-2. **Libros** - Lista completa de libros
-3. **Estadísticas** - Métricas y análisis de datos
-4. **Relación Autor-Libros** - Vista detallada de relaciones
-
-#### 4️⃣ **Información de Exportaciones**
-```http
-GET /export/info
-```
-**Devuelve**: JSON con información sobre todas las exportaciones disponibles
-
-### **Esquemas de Respuesta en Swagger**
-
-En la documentación de Swagger encontrarás:
-
-✅ **Respuesta Exitosa (200)**:
-- Content-Type: `application/vnd.openxmlformats-officedocument.spreadsheetml.sheet`
-- Content-Disposition: `attachment; filename="archivo.xlsx"`
-- Body: Archivo Excel binario
-
-❌ **Respuesta de Error (500)**:
-```json
-{
-  "error": "Error al exportar [tipo]",
-  "message": "Descripción detallada del error"
-}
-```
-
-### **Cómo Descargar los Archivos**
-
-#### **En el Navegador:**
-1. Ve directamente a la URL del endpoint (http://localhost:8000/export/combined/excel)
-2. El archivo se descargará automáticamente
-
-#### **En Postman/Insomnia:**
-1. Haz la petición GET
-2. En la respuesta, busca el botón de descarga (↓)
-3. Selecciona "Save Response Body"
-4. Guarda como archivo `.xlsx`
-
-#### **En Swagger UI:**
-1. Ejecuta el endpoint
-2. En la respuesta, haz clic en "Download file"
-3. El archivo se guardará automáticamente
-
----
-
-## ⚠️ Estado Actual de la API
-
-### **✅ Endpoints Completamente Funcionales:**
-- Todos los **GET** (lectura de datos)
-- **POST** `/users` (creación de usuarios)
-- **POST** `/auth/login` (autenticación)
-- **Todos los endpoints de exportación**
-
-### **🚧 Endpoints En Desarrollo:**
-- Algunos **POST**, **PUT**, **DELETE** pueden estar en desarrollo
-- Verificar funcionalidad en Swagger UI
-
-### **📝 Recomendaciones de Uso:**
-- Crear usuarios primero antes de probar otros endpoints
-- Usar Swagger UI para explorar y probar la API
-- Verificar la documentación de cada endpoint en Swagger
+Los archivos se descargan automáticamente en navegador, Swagger, o herramientas como Postman.
 
 ---
 
 ## 🗄️ Esquema de Base de Datos
-
-### **Modelos Principales:**
 
 ```prisma
 model User {
@@ -332,62 +213,52 @@ model Book {
 ## 🔧 Comandos Útiles
 
 ```bash
-# Ver el estado de la base de datos
-npx prisma studio
-
-# Resetear la base de datos
-npx prisma migrate reset
-
-# Ver logs de desarrollo
-npm run start:dev
-
+npx prisma studio        # Ver base de datos
+npx prisma migrate reset # Resetear la base
+npm run start:dev        # Iniciar app en desarrollo
 ```
 
 ---
 
 ## 📝 Scripts Disponibles
 
-- `npm run build` - Compilar para producción
-- `npm run start` - Iniciar en producción
-- `npm run start:dev` - Iniciar en desarrollo con hot-reload
+* `npm run build`
+* `npm run start`
+* `npm run start:dev`
 
 ---
 
-## 🚀 Características para mejorar esta api haciendo esta escalable a:
+## 🌱 Mejoras Futuras
 
-- [ ] Autenticación completa con roles
-- [ ] Filtros avanzados en exportaciones
-- [ ] Paginación en listados
-- [ ] Subida de archivos para libros
-- [ ] Logs de auditoría
+* [ ] Autenticación completa con roles
+* [ ] Filtros avanzados en exportaciones
+* [ ] Paginación
+* [ ] Subida de archivos
+* [ ] Logs de auditoría
 
 ---
 
 ## 🤝 Contribución
 
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
+1. Fork del proyecto
+2. Crea una rama (`git checkout -b feature/lo-que-sea`)
+3. Commit (`git commit -m 'Agrega feature'`)
+4. Push (`git push origin feature/lo-que-sea`)
 5. Abre un Pull Request
 
 ---
 
 ## 📄 Licencia
 
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+MIT. Ver archivo [LICENSE](LICENSE).
 
 ---
 
 ## 📞 Soporte
 
-Si tienes preguntas o problemas:
+* Ver Swagger UI
+* Revisar logs (`npm run start:dev`)
+* Verifica archivo `.env`
+* Asegúrate que PostgreSQL esté activo
 
-1. **Revisa la documentación** en Swagger UI
-2. **Verifica los logs** de la aplicación
-3. **Revisa la configuración** del `.env`
-4. **Asegúrate** de que PostgreSQL esté corriendo
-
----
- 
- 
+````
