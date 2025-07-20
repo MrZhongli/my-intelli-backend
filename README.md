@@ -12,7 +12,6 @@ Una API RESTful desarrollada con NestJS para la gestión de una biblioteca digit
 - **Base de Datos**: PostgreSQL
 - **ORM**: Prisma
 - **Documentación**: Swagger/OpenAPI
-- **Autenticación**: JWT (JSON Web Tokens)
 - **Exportación**: XLSX (Excel)
 - **Eventos**: EventEmitter para jobs asíncronos
 
